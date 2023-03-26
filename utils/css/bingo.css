@@ -3,7 +3,7 @@
 :root {
     --color-body: #b6cbce;
     --color-heading:  #eef3db;
-    --color-base:  #033f47;
+    --color-base:  #1d6a61;
     --color-base2: #022a30;
     --color-brand: #e0f780;
     --color-brand2: #deff58;
@@ -12,7 +12,12 @@
 }
 
 body {
-    background-color: var(--color-base2);
+    /* background-image: radial-gradient(var(--color-base), var(--color-base)); */
+    /* background-image: repeating-linear-gradient(var(--color-base), var(--color-base2),var(--color-base), var(--color-base2)); */
+    background-image: url(../images/bg4.jpg);
+    background-position: center center;
+    background-size: 100%;
+    opacity: 1;
     color: var(--color-body);
     font-family: var(--font-base), sans-serif;
 }
