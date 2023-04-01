@@ -13,3 +13,32 @@ AOS.init({
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
 });
+
+
+document.addEventListener('click', function (event) {
+  var trigger = document.querySelector('.navbar-toggler');
+  var isClickInsideNavbar = trigger.contains(event.target);
+  var navbarCollapse = document.querySelector('.navbar-collapse');
+  var isCollapsed = navbarCollapse.classList.contains('show');
+
+  if (!isClickInsideNavbar && isCollapsed) {
+    navbarCollapse.classList.remove('show');
+  }
+});
+
+
+function typingEffect(text, element) {
+  var i = 0;
+  var speed = 50; // Typing speed in milliseconds
+  function typeLetter() {
+      if (i < text.length) {
+      element.innerHTML += text.charAt(i);
+      i++;
+      setTimeout(typeLetter, speed);
+      } else {
+      element.classList.add("complete"); // add CSS class when typing is done
+      }
+  }
+  typeLetter();
+}
+typingEffect("Hello, world!", document.getElementById("text"));

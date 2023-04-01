@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #text {
+            font-size: 24px;
+            font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.5;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        #text.complete {
+            color: #f00;
+            font-style: italic;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="text"></div>
+    <script>
+        function typeText(text, element) {
+            var i = 0;
+            var speed = 50; // Typing speed in milliseconds
+            function typeLetter() {
+                if (i < text.length) {
+                element.innerHTML += text.charAt(i);
+                i++;
+                setTimeout(typeLetter, speed);
+                } else {
+                element.classList.add("complete"); // add CSS class when typing is done
+                }
+            }
+            typeLetter();
+        }
+
+        typeText("Hello, world!", document.getElementById("text"));
+
+    </script>
+</body>
+</html>

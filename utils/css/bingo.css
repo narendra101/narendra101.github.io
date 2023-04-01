@@ -5,16 +5,14 @@
     --color-heading:  #eef3db;
     --color-base:  #1d6a61;
     --color-base2: #022a30;
-    --color-brand: #e0f780;
-    --color-brand2: #deff58;
+    --color-brand: #0d8f9e;
+    --color-brand2: #3d5fc7;
     --sidebar-width: 240px;
     --font-base: "Bai Jamjuree";
 }
 
 body {
-    /* background-image: radial-gradient(var(--color-base), var(--color-base)); */
-    /* background-image: repeating-linear-gradient(var(--color-base), var(--color-base2),var(--color-base), var(--color-base2)); */
-    background-image: url(../images/bg4.jpg);
+    background-image: url(../images/bg.jpg);
     background-position: center center;
     background-size: 100%;
     opacity: 1;
