@@ -88,9 +88,12 @@ img {
         border: 8px solid var(--color-brand);
     }
     .full-height {
-        margin-left: var(--sidebar-width);
+        margin-left: var(--sidebar-width);        
         border-bottom: 2px solid rgba(255, 255, 255, 0.1);
     }
+    #home {
+        padding-left: var(--sidebar-width);        
+    }    
 }  
 @media(min-width: 412px){
     .navbar {
