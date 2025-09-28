@@ -1,0 +1,70 @@
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background-color: #0f172a; /* slate-900 */
+  --text-color: #cbd5e1; /* slate-300 */
+  --accent-color: #22d3ee; /* cyan-400 */
+  --accent-color-darker: #06b6d4; /* cyan-500 */
+  --card-background: #1e293b; /* slate-800 */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar for a more modern look */
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--background-color);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--accent-color);
+  border-radius: 10px;
+  border: 3px solid var(--background-color);
+}
+
+h1, h2, h3 {
+  font-family: 'Roboto Mono', monospace;
+}
+
+.glassmorphism {
+  background: rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(203, 213, 225, 0.1);
+}
+
+.scroll-watcher {
+  height: 5px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--accent-color);
+  width: 100%;
+  scale: 0 1;
+  transform-origin: left;
+  animation: scroll-watcher linear;
+  animation-timeline: scroll();
+}
+
+@keyframes scroll-watcher {
+  to { scale: 1 1; }
+}
