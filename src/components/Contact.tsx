@@ -1,13 +1,14 @@
 import { motion } from "motion/react";
 import { Mail, Phone, Linkedin, Github, Instagram, MessageCircle, FileText } from "lucide-react";
+import resume from '@/utils/data/narendra_resume.pdf'
 
 export const Contact = () => {
   const socials = [
-    { name: "LinkedIn", icon: <Linkedin className="w-5 h-5" />, href: "#", color: "hover:text-blue-500" },
-    { name: "GitHub", icon: <Github className="w-5 h-5" />, href: "#", color: "hover:text-white" },
-    { name: "Instagram", icon: <Instagram className="w-5 h-5" />, href: "#", color: "hover:text-pink-500" },
-    { name: "WhatsApp", icon: <MessageCircle className="w-5 h-5" />, href: "#", color: "hover:text-green-500" },
-    { name: "Resume", icon: <FileText className="w-5 h-5" />, href: "#", color: "hover:text-orange-500" },
+    { name: "LinkedIn", icon: <Linkedin className="w-5 h-5" />, href: "https://www.linkedin.com/in/narendra-anyam/", color: "hover:text-blue-500" },
+    { name: "GitHub", icon: <Github className="w-5 h-5" />, href: "https://github.com/narendra101", color: "hover:text-white" },
+    { name: "Instagram", icon: <Instagram className="w-5 h-5" />, href: "https://www.instagram.com/_bingo_______/", color: "hover:text-pink-500" },
+    { name: "WhatsApp", icon: <MessageCircle className="w-5 h-5" />, href: "https://wa.me/+919133513373", color: "hover:text-green-500" },
+    { name: "Resume", icon: <FileText className="w-5 h-5" />, href: resume, color: "hover:text-orange-500" },
   ];
 
   return (
@@ -54,6 +55,7 @@ export const Contact = () => {
                 <a
                   key={social.name}
                   href={social.href}
+                  target="_blank"
                   className={`flex flex-col items-center justify-center p-8 rounded-2xl border border-white/5 bg-white/[0.02] ${social.color} transition-all duration-300 transform hover:-translate-y-2`}
                 >
                   <div className="mb-4">{social.icon}</div>

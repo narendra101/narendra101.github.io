@@ -36,7 +36,7 @@ export default function App() {
   }, []);
 
   return (
-    <div ref={containerRef} className="relative min-h-screen bg-[#050505] text-white selection:bg-orange-500 selection:text-white">
+    <div ref={containerRef} className="relative min-h-screen overflow-x-hidden bg-[#050505] text-white selection:bg-orange-500 selection:text-white">
       {/* 3D Background Scene */}
       <div className="fixed inset-0 z-0 pointer-events-none">
         <Scene3D />

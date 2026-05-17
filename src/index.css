@@ -10,10 +10,14 @@
 @layer base {
   html {
     scroll-behavior: initial;
+    overflow-x: hidden;
+    max-width: 100%;
   }
   
   body {
     @apply bg-[#050505] text-white antialiased;
+    overflow-x: hidden;
+    max-width: 100%;
   }
 
   ::selection {
