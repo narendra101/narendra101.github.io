@@ -86,7 +86,7 @@ export const Hero = () => {
 
               <span>
                 Building AI products + occasionally crafting content,
-                branding & digital experiences.
+                branding & digital experiences. and shaping digital journeys that feel effortless.
               </span>
             </div>
           </motion.div>
