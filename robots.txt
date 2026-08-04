@@ -3,6 +3,5 @@ Allow: /
 Disallow: /assets/
 Disallow: /components/
 Disallow: /libs/
-Disallow: /*.map$
 Allow: /blogs/
 Sitemap: https://narendra101.github.io/sitemap.xml

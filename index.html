@@ -3,35 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Narendra Kumar is an AI and Full Stack Developer specializing in React, Python, Machine Learning, and Web Development. Building innovative solutions that drive business growth." />
-    <meta name="keywords" content="AI developer, Full stack developer, React developer, Python developer, Machine Learning, Data Science, Web Development, JavaScript, TypeScript, Next.js, Node.js" />
+    <!-- favicon -->
+    <link rel="icon" href="/favicon.png" />
+    <title>Narendra Kumar - AI and Full Stack Developer Portfolio</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Narendra Kumar is an experienced AI and Full Stack Developer building innovative web applications, React components, and machine learning solutions for businesses worldwide." />
+    <meta name="keywords" content="AI developer, Full stack developer, React, Python, JavaScript, TypeScript, Machine Learning, Data Science, Web Development, Software Engineer, Bangalore, India" />
     <meta name="author" content="Narendra Kumar" />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://narendra101.github.io/" />
     
-    <!-- Open Graph -->
-    <meta property="og:title" content="Narendra Kumar | AI & Full Stack Developer" />
-    <meta property="og:description" content="AI and Full Stack Developer specializing in React, Python, and Machine Learning. Building innovative web and AI solutions." />
-    <meta property="og:image" content="/assets/og-image.jpg" />
-    <meta property="og:image:alt" content="Narendra Kumar - AI Developer Profile" />
-    <meta property="og:url" content="https://narendra101.github.io/" />
+    <!-- Open Graph / Social Media -->
     <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://narendra101.github.io/" />
+    <meta property="og:title" content="Narendra Kumar | AI & Full Stack Developer" />
+    <meta property="og:description" content="Narendra Kumar - AI and Full Stack Developer specializing in React, Python, and Machine Learning" />
+    <meta property="og:image" content="/favicon.png" />
     <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Narendra Kumar Portfolio" />
     
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Narendra Kumar | AI & Full Stack Developer" />
-    <meta name="twitter:description" content="AI and Full Stack Developer - React, Python, Machine Learning" />
-    <meta name="twitter:image" content="/assets/og-image.jpg" />
-    
-    <!-- Preload critical resources -->
-    <link rel="preload" href="/assets/index-B1q_q6rS.css" as="style" />
-    <link rel="preload" href="/assets/index-C-tbt0rc.js" as="script" />
-    
-    <!-- Styles and Scripts -->
-    <link rel="icon" href="/favicon.png" />
-    <script type="module" crossorigin src="/assets/index-C-tbt0rc.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-B1q_q6rS.css">
+    <meta name="twitter:description" content="AI and Full Stack Developer - Building innovative solutions" />
+    <meta name="twitter:creator" content="@narendra101" />
+    <meta name="twitter:image" content="/favicon.png" />
     
     <!-- Structured Data (Schema.org) -->
     <script type="application/ld+json">
@@ -46,7 +43,13 @@
         "https://github.com/narendra101",
         "https://twitter.com/narendra101"
       ],
-      "description": "AI and Full Stack Developer specializing in React, Python, and Machine Learning",
+      "description": "Experienced AI and Full Stack Developer specializing in React, Python, and Machine Learning",
+      "image": {
+        "@type": "ImageObject",
+        "url": "/favicon.png",
+        "width": 400,
+        "height": 400
+      },
       "areaServed": {
         "@type": "Country",
         "name": "India"
@@ -54,16 +57,20 @@
     }
     </script>
     
-    <!-- Breadcrumbs -->
+    <!-- Breadcrumbs for Semantic SEO -->
     <nav aria-label="Breadcrumb" style="display: none;">
-      <ol>
-        <li><a href="/">Home</a></li>
+      <ol itemscope itemtype="https://schema.org/Organization">
+        <li itemprop="name" itemscope itemtype="https://schema.org/WebPage">
+          <span itemprop="name">Home</span>
+        </li>
       </ol>
     </nav>
+    
+    <!-- Theme Color for Mobile Browsers -->
+    <meta name="theme-color" content="#000000" />
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
-
