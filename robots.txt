@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /assets/
+Disallow: /components/
+Disallow: /libs/
+Allow: /blogs/
+Sitemap: https://narendra101.github.io/sitemap.xml

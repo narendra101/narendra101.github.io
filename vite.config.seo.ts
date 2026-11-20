@@ -1,0 +1,32 @@
+// Inject SEO meta tags into index.html after build
+export default defineConfig(({mode}) => {
+  const env = loadEnv(mode, '.', '');
+  return {
+    // base: "narendra101.github.io", 
+    base: "/", 
+    plugins: [react(), tailwindcss()],
+    define: {
+      'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY),
+    },
+    resolve: {
+      alias: {
+        '@': path.resolve(__dirname, '.'),
+      },
+    },
+    // Server configuration for GitHub Pages deployment
+    server: {
+      // HMR is disabled in AI Studio via DISABLE_HMR env var.
+      // Do not modify—file watching is disabled to prevent flickering during agent edits.
+      hmr: process.env.DISABLE_HMR !== 'true',
+    },
+    // Post-build hook to add SEO meta tags
+    build: {
+      emptyOutDir: true,
+      outDir: 'dist',
+      copyPublicDirectory: true,
+      publicDir: 'public',
+      // Inject SEO data into index.html
+      writeIndexHtml: true,
+    },
+  };
+});
